@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CEMOSA - Visor de proyectos CEMOSA PERÚ</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    #map { height: 600px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 10px 20px;
+    }
+    h1 {
+      margin: 0;
+    }
+    #filter-container {
+      padding: 10px 20px;
+      background: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Visor de proyectos CEMOSA PERÚ</h1>
+  </header>
+
+  <div id="filter-container">
+    <label for="filter">Filtrar por categoría:</label>
+    <select id="filter">
+      <option value="all">Todos</option>
+      <option value="Saneamiento">Saneamiento</option>
+    </select>
+  </div>
+
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
